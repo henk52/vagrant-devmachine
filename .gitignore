@@ -1,0 +1,5 @@
+Vagrantfile
+files
+modules
+.vagrant
+post_up.cfg

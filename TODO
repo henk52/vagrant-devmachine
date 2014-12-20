@@ -4,3 +4,20 @@ IceScrum
 Jenkins
 SourceNavigator
 Build tools? - probably a user decission.
+mv sourcenav-git-2dacab23c4af53dee0b68ae89ba334c034aef3b5 sourcenavigator
+ln -s /vagrant/src/sourcenavigator /var/opengrok/src/sourcenavigator
+sudo chown vagrant /var/opengrok/data/index
+/opt/opengrok/bin/OpenGrok index
+
+
+Issues:
+- Secure the access to the web services, possibly hide them behind apache.
+  : http://pwu-developer.blogspot.com/2011/04/securing-tomcat-with-apache-web-server.html
+- Include sonar-runner
+- Provide exampl sonar properties information.
+- Provide description of how to use the tools
+- Fix the access rights in sudo chown vagrant /var/opengrok/data/index
+
+
+TODO
+Install the UML tools.

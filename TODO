@@ -3,6 +3,8 @@ OpenGrok
 IceScrum
 Jenkins
 SourceNavigator
+Gerrit
+QA thingy
 Build tools? - probably a user decission.
 mv sourcenav-git-2dacab23c4af53dee0b68ae89ba334c034aef3b5 sourcenavigator
 ln -s /vagrant/src/sourcenavigator /var/opengrok/src/sourcenavigator

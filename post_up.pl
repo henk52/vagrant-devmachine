@@ -142,3 +142,5 @@ print "III Installing Sonar\n";
 print "III Installing OpenGrok\n";
 `sudo puppet apply --verbose /etc/puppet/modules/opengrok/tests/init.pp &> /var/log/puppet_install_opengrok.log`;
 
+print "III Installling the RPMs of the build machine.";
+`sudo puppet apply /vagrant/build_machine_install.pp &> /var/log/puppet_install_opengrok.log`;

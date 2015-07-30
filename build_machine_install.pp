@@ -41,33 +41,3 @@ package { "physfs": ensure => "installed" }
 package { "physfs-devel": ensure => "installed" }
 package { "SDL-devel": ensure => "installed" }
 package { "SDL_mixer-devel": ensure => "installed" }
-
-# Joe's Window Manager
-package { "jwm": ensure => "installed" }
-package { "tigervnc-server": ensure => "installed" }
-
-
-# IDE
-package { "eclipse-cdt": ensure => "installed" }
-package { "eclipse-checkstyle": ensure => "installed", require => Package [ 'eclipse-cdt' ] }
-package { "eclipse-cmakeed": ensure => "installed", require => Package [ 'eclipse-cdt' ] }
-package { "eclipse-egit": ensure => "installed", require => Package [ 'eclipse-cdt' ] }
-package { "eclipse-egit-github": ensure => "installed", require => Package [ 'eclipse-cdt' ] }
-package { "eclipse-epic": ensure => "installed", require => Package [ 'eclipse-cdt' ] }
-package { "eclipse-gcov": ensure => "installed", require => Package [ 'eclipse-cdt' ] }
-package { "eclipse-gprof": ensure => "installed", require => Package [ 'eclipse-cdt' ] }
-package { "eclipse-mylyn": ensure => "installed", require => Package [ 'eclipse-cdt' ] }
-package { "eclipse-mylyn-builds": ensure => "installed", require => Package [ 'eclipse-cdt' ] }
-package { "eclipse-mylyn-ide": ensure => "installed", require => Package [ 'eclipse-cdt' ] }
-package { "eclipse-mylyn-versions": ensure => "installed", require => Package [ 'eclipse-cdt' ] }
-package { "eclipse-mylyn-builds-hudson": ensure => "installed", require => Package [ 'eclipse-cdt' ] }
-package { "eclipse-mylyn-context-cdt": ensure => "installed", require => Package [ 'eclipse-cdt' ] }
-package { "eclipse-mylyn-context-team": ensure => "installed", require => Package [ 'eclipse-cdt' ] }
-package { "eclipse-mylyn-docs-epub": ensure => "installed", require => Package [ 'eclipse-cdt' ] }
-package { "eclipse-mylyn-docs-htmltext": ensure => "installed", require => Package [ 'eclipse-cdt' ] }
-package { "eclipse-mylyn-docs-wikitext": ensure => "installed", require => Package [ 'eclipse-cdt' ] }
-package { "eclipse-mylyn-tasks-bugzilla": ensure => "installed", require => Package [ 'eclipse-cdt' ] }
-package { "eclipse-mylyn-tasks-web": ensure => "installed", require => Package [ 'eclipse-cdt' ] }
-package { "eclipse-mylyn-versions-git": ensure => "installed", require => Package [ 'eclipse-cdt' ] }
-package { "eclipse-valgrind": ensure => "installed", require => Package [ 'eclipse-cdt' ] }
-

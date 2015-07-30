@@ -2,6 +2,7 @@
 
 if  $osfamily == 'Debian' {
 
+  package { "bison": ensure => "installed" }
   package { "flex": ensure => "installed" }
   
   # Make tools

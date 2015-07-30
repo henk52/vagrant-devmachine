@@ -7,7 +7,8 @@ if  $osfamily == 'Debian' {
   
   # Make tools
   package { "scons": ensure => "installed" }
-
+  package { "build-essential": ensure => "installed" }
+  
   package { "libssl-dev": ensure => "installed" }
 
 } else {

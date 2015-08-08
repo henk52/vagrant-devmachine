@@ -11,6 +11,10 @@ if  $osfamily == 'Debian' {
   
   package { "libssl-dev": ensure => "installed" }
 
+  # Needed by xorp.
+  package { "libpcap-dev": ensure => "installed" }
+  package { "ncurses-dev": ensure => "installed" }
+
 } else {
 
 
@@ -53,4 +57,8 @@ if  $osfamily == 'Debian' {
   package { "physfs-devel": ensure => "installed" }
   package { "SDL-devel": ensure => "installed" }
   package { "SDL_mixer-devel": ensure => "installed" }
+
+  # Needed by xorp.
+  package { "libpcap-devel": ensure => "installed" }
+  package { "": ensure => "installed" }
 }

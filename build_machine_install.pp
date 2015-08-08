@@ -60,5 +60,4 @@ if  $osfamily == 'Debian' {
 
   # Needed by xorp.
   package { "libpcap-devel": ensure => "installed" }
-  package { "": ensure => "installed" }
 }
